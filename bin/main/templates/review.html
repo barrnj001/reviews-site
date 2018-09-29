@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review</title>
+</head>
+<body>
+	<h1>One review</h1>
+
+	<div th:each= "review: ${reviews}">
+		<p th:text = "${review.name}"></p>
+		<p th:text = "${review.desc}"></p>
+		<a href="http://localhost:8080/show-reviews"> Return </a>
+	</div>
+
+</body>
+</html>
